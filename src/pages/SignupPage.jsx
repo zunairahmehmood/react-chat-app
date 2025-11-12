@@ -37,10 +37,10 @@ export const SignUpPage = ({ onSignUp }) => {
         <input type="text" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)} className="mb-4 w-full p-2 border rounded" />
         <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} className="mb-4 w-full p-2 border rounded" />
         <input type="password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} className="mb-4 w-full p-2 border rounded" />
-        <button onClick={handleSignUp} disabled={loading} className="w-full bg-purple-500 text-white p-2 rounded mb-2 cursor-pointer">
+        <button onClick={handleSignUp} disabled={loading} className="w-full bg-purple-500 text-white p-2 rounded mb-2 cursor-pointer hover:bg-purple-900 transition">
           {loading ? "Loading..." : "Sign Up"}
         </button>
-        <p className="text-center">Already have an account? <button onClick={() => navigate("/login")} className="text-purple-500 underline cursor-pointer">Sign in</button></p>
+        <p className="text-center">Already have an account? <button onClick={() => navigate("/login")} className="text-purple-600 underline cursor-pointer">Sign in</button></p>
       </div>
     </div>
   );
